@@ -6,5 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angular-element-keydown-directive';
+
+  products = [
+    { id: 1, name: 'Laptop' },
+    { id: 2, name: 'Mobile' }
+  ];
+
+  onCheckOne() {
+    alert('From Check box without directive');
+  }
+
+  onCheckTwo() {
+    alert('From Check box with directive');
+  }
 }
